@@ -1,0 +1,73 @@
+.contacts {
+  width: 250px;
+  height: 32px;
+  box-sizing: border-box;
+
+  @media (min-width: $screen-sm) {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 580px;
+  }
+
+  &__time,
+  &__address {
+    @media (max-width: $screen-sm - 1) {
+      display: none;
+    }
+  }
+
+  &__time,
+  &__phone,
+  &__address {
+    padding-left: 25px;
+    font-family: $font-family-text;
+    font-weight: 300;
+    font-size: $font-size;
+    line-height: $line-height;
+  }
+
+  &__time {
+    position: relative;
+    margin-right: 30px;
+
+    @media (min-width: $screen-sm) and (max-width: $screen-lg - 1){margin-right: 60px; }
+
+    &:before {
+      @include sprite($time);
+      position: absolute;
+      display: inline-block;
+      content: "";
+      top: 3px;
+      left: 0;
+    }
+  }
+
+  &__phone {
+    position: relative;
+    margin-right: 60px;
+
+    &:before {
+      @include sprite($phone-call-h);
+      position: absolute;
+      display: inline-block;
+      content: "";
+      top: 3px;
+      left: 0;
+    }
+  }
+
+  &__address {
+    position: relative;
+
+    &:before {
+      @include sprite($placeholder-h);
+      position: absolute;
+      display: inline-block;
+      content: "";
+      top: 3px;
+      left: 0;
+    }
+  }
+
+}
