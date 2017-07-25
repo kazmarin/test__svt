@@ -1,5 +1,6 @@
 @mixin content-area() {
   margin: 0 auto;
+  border: 1px solid green;
 
   @media (min-width: $screen-s) {
     padding-left: 14px;

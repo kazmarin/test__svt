@@ -1,48 +1,26 @@
 .page-header {
+  position: absolute;
+  width: 100%;
   height: 102px;
-
-  &__contacts {
-    box-shadow: insert 0 0 0 5px rgba(0,0,0,0.95);
-  }
+  background-color: rgba(0,0,0,0.05);
+  border-bottom: 1px solid #f0f3f2;
 
   &__container {
     @include content-area();
+    display: flex;
+    justify-content: flex-end;
   }
 
   &__contacts-wrap {
-    float: left;
-
-    @media (min-width: $screen-m) {float: right; }
-  }
-
-  &__toggle-btn {
-    float: right;
-
-    @media (min-width: $screen-m) {float: right }
-  }
-
-  &__navbar {
-    position: absolute;
-    display: none;
-    top: 30px;
-    left: 0;
-    height: 370px;
-    width: 100%;
-    background-color: #e9e9f1;
-    border-top: 1px solid #22313f;
-    // для того, чтоб  navbar был выше блока roks
-    z-index: 2;
-
-    @media (min-width: $screen-sm) {
-      display: block;
-      height: 75px;
-      background-color: transparent;
-      border-top: none;
-      box-sizing: border-box;
-    }
+    margin-right: 280px;
   }
 
   &__navbar-wrap {
-    padding-top: 7px;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    // для того, чтоб  navbar был выше блока roks
+    z-index: 2;
   }
 }

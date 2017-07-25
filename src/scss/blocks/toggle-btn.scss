@@ -1,0 +1,21 @@
+.toggle-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &:active {transform: scale(0.8); }
+
+  &:focus {outline: none; }
+
+  &__open {
+    @include sprite($toggle-open);
+    display: inline-block;
+    content:'';
+  }
+
+  &__close {
+    @include sprite($toggle-close);
+    display: inline-block;
+    content:'';
+  }
+}

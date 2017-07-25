@@ -1,0 +1,22 @@
+.main-nav-toggle {
+
+  &__list {
+  }
+
+  &__item {
+    list-style-type: none;
+
+    &:first-child .main-nav-toggle__link {
+      color: #f35145;
+    }
+  }
+
+  &__link {
+    font-family: $font-family;
+    font-weight: 500;
+    font-size: ($font-size - 2);
+    line-height: $line-height * 2;
+    color: #3c3950;
+    text-decoration: none;
+  }
+}

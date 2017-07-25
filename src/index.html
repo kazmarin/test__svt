@@ -13,15 +13,15 @@
         <p class="contacts__address">САНКТ-ПЕТЕРБУРГ, ПОЛЯРНИКОВ 6</p>
         <p class="contacts__mail"></p>
       </div>
-      <button class="page-header__toggle-btn toggle-btn">
+      <button class="page-header__toggle-btn-wrap toggle-btn">
         <span class="toggle-btn__open"></span>
       </button>
     </div>
-    <div class="page-header__navbar-wrap">
-      <button class="page-header__toggle-btn toggle-btn">
+    <div class="page-header__navbar-wrap navbar">
+      <button class="navbar__toggle-btn toggle-btn">
         <span class="toggle-btn__close"></span>
       </button>
-      <div class="page-header__nav-toggle-wrap main-nav-toggle">
+      <div class="navbar__nav-toggle-wrap main-nav-toggle">
         <ul class="main-nav-toggle__list">
           <li class="main-nav-toggle__item">
             <a href="#about-us" class="main-nav-toggle__link">О МАГАЗИНЕ</a>
@@ -57,31 +57,30 @@
     </div>
 
     <div class="info">
-      <div class="info__wrapper-left"></div>
-
-      <div class="info__wrapper-right"></div>
-
-      <div class="info__inner">
-        <div class="info__container">
-          <div class="info__about-us about-us">
-            <h2 class="about-us__title">О МАГАЗИНЕ</h2>
-            <p class="about-us__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem nobis, odio id maiores! Ratione error ipsa molestiae, accusantium. Eveniet numquam commodi aspernatur sint suscipit voluptatibus quasi sunt vel cumque dolor culpa modi temporibus minus praesentium pariatur quod, inventore quam vero quia, voluptas placeat debitis tempore. Reiciendis, suscipit. Nisi, quam, nam.</p>
+      <div class="info__wrapper-left">
+        <div class="info__about-us">
+            <h2 class="info__title">О МАГАЗИНЕ</h2>
+            <p class="info__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem nobis, odio id maiores! Ratione error ipsa molestiae, accusantium. Eveniet numquam commodi aspernatur sint suscipit voluptatibus quasi sunt vel cumque dolor culpa modi temporibus minus praesentium pariatur quod, inventore quam vero quia, voluptas placeat debitis tempore. Reiciendis, suscipit. Nisi, quam, nam.</p>
           </div>
+      </div>
+
+      <div class="info__wrapper-right">
+        <div class="info__inner">
           <div class="info__item-wrap info-item">
-            <h3 class="info-item__title">3D-ДИЗАЙН БЕСПЛАТНО</h3>
+            <h3 class="info-item__title info-item__title--pen">3D-ДИЗАЙН БЕСПЛАТНО</h3>
             <p class="info-item__text">Опытные 3D-дизайнеры подготовят для вас проект в соответствии с вашими пожеланиями.</p>
             <p class="info-item__text">Много готовых проектов</p>
           </div>
           <div class="info__item-wrap info-item">
-            <h3 class="info-item__title">САМЫЕ СВЕЖИЕ КОЛЛЕКЦИИ</h3>
+            <h3 class="info-item__title info-item__title--idea">САМЫЕ СВЕЖИЕ КОЛЛЕКЦИИ</h3>
             <p class="info-item__text">Мы регулярно следим за новинками всех мировых производителей и первыми привозим все актуальные коллекции</p>
           </div>
           <div class="info__item-wrap info-item">
-            <h3 class="info-item__title">НАЛИЧИЕ НА СКЛАДЕ</h3>
+            <h3 class="info-item__title info-item__title--logistics">НАЛИЧИЕ<br> НА СКЛАДЕ</h3>
             <p class="info-item__text">90% представленного в гиппермаркете ассортимента присутствует на складе.</p>
             <p class="info-item__text">Можете быть спокойны за своевременную доставку</p>
           </div>
-        </div>
+      </div>
       </div>
     </div>
 
@@ -90,11 +89,11 @@
         <ul class="result__list">
           <li class="result__item">
             <p class="result__data">114</p>
-            <p class="result__text">Мировых заводов-производителей</p>
+            <p class="result__text">Мировых<br> заводов-производителей</p>
           </li>
           <li class="result__item">
             <p class="result__data">165</p>
-            <p class="result__text">Готовых интерьерных решений</p>
+            <p class="result__text">Готовых<br> интерьерных решений</p>
           </li>
           <li class="result__item">
             <p class="result__data">850</p>
@@ -102,7 +101,7 @@
           </li>
           <li class="result__item">
             <p class="result__data">2800</p>
-            <p class="result__text">Коллекций плитки и сантехники</p>
+            <p class="result__text">Коллекций<br> плитки и сантехники</p>
           </li>
         </ul>
       </div>
@@ -143,6 +142,8 @@
       </div>
     </div>
   </main>
+
+  <script src="js/script.min.js"></script>
 
 </body>
 </html>
