@@ -2,6 +2,12 @@
   position: relative;
   height: 480px;
 
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
   &__wrapper-left, {
     float: left;
     width: 35%;
@@ -10,6 +16,7 @@
   }
 
   &__about-us {
+    float: right;
     margin-right: 57px;
     width: 500px;
   }
@@ -41,10 +48,18 @@
   &__inner {
     margin-left: 42px;
     padding-top: 130px;
+    width: 1210px;
+    box-sizing: border-box;
+
+    &:after {
+      content: '';
+      display: block;
+      clear: both;
+    }
   }
 
   &__item-wrap {
     float: left;
-    margin-right: 60px;
+    margin-right: 140px;
   }
 }

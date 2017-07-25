@@ -1,5 +1,5 @@
 .info-item {
-  width: 260px;
+  width: 250px;
 
   &__title {
     position: relative;
@@ -14,7 +14,7 @@
       display: inline-block;
       content: '';
       top: 0;
-      right: -10px;
+      right: -80px;
     }
 
     &--pen:after {
@@ -37,5 +37,4 @@
     font-weight: normal;
     color: #5f727f;
   }
-
 }

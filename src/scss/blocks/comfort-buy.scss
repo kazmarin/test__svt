@@ -1,0 +1,54 @@
+.comfort-buy {
+  height: 766px;
+
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  &__wrapper-left {
+    float: left;
+    width: 50%;
+    height: 766px;
+    background-image: url(../img/buy-img.jpg);
+    background-size: cover;
+  }
+
+  &__wrapper-right {
+    float: left;
+    width: 50%;
+  }
+
+  &__inner {
+    margin-top: 90px;
+    padding-left: 54px;
+    width: 895px;
+    box-sizing: border-box;
+  }
+
+  &__slogan {
+    font-family: 'Plumb', sans-serif;
+    font-size: $font-size + 8;
+    line-height: $line-height * 2;
+    color: #3c3950;
+  }
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 160px;
+  }
+
+  &__items-wrap {
+    margin-bottom: 140px;
+
+    &:nth-child(2) {
+      margin-right: 40px;
+    }
+
+    &:nth-child(5) {
+      margin-right: 40px;
+    }
+  }
+}

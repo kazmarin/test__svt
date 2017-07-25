@@ -1,0 +1,54 @@
+.item {
+  position: relative;
+  width: 254px;
+
+  &:before {
+    display: block;
+    position: absolute;
+    content: '';
+    top: -95px;
+    left: 0;
+  }
+
+  &--home:before {
+    @include sprite($home);
+  }
+
+   &--parking:before {
+    @include sprite($parking);
+  }
+
+   &--advice:before {
+    @include sprite($advice);
+  }
+
+   &--child:before {
+    @include sprite($child);
+  }
+
+   &--coffee:before {
+    @include sprite($coffee);
+  }
+
+   &--delivery:before {
+    @include sprite($delivery);
+  }
+
+  &__title {
+    font-family: $font-family;
+    font-size: $font-size + 3;
+    line-height: $line-height + 5;
+    font-weight: 300;
+    color: #3c3950;
+  }
+
+  &__text {
+    padding-top: 30px;
+    width: 220px;
+    font-family: $font-family;
+    font-size: $font-size;
+    line-height: $line-height;
+    font-weight: 300;
+    color: #3c3950;
+  }
+}
